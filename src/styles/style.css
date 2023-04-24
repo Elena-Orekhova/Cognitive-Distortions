@@ -1,7 +1,106 @@
-/** CSS STYLE **/
+@font-face {
+  font-family: 'OpenSans-Bold';
+  font-weight: 700;
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  font-weight: 400;
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
 
-.hello {
-  display: block;
+@font-face {
+  font-family: 'Neucha';
+  font-weight: 400;
+  src: url('../fonts/Neucha-Regular.ttf');
+}
 
-  color: #fff;
+:root {
+  --color-white: #ffffff;
+  --color-white-translucent: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-main: #fe8a02;
+  --color-main-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-dark-translucent: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 1100px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.bgcolor-beige {
+  background-color: var(--color-light);
+}
+
+.bgcolor-white {
+  background-color: var(--color-white);
+}
+
+.bgcolor-dark {
+  background-color: var(--color-main-dark);
+}
+
+.bgcolor-brown {
+  background-color: var(--color-brown);
+}
+
+.bgimg-question {
+background-image: ;
+}
+
+.columns-2 {
+  columns: 2;
+}
+
+h1 {
+font-family: 'Neucha', sans-serif;
+font-size: 72px;
+line-height: 1.2em;
+}
+
+h2 {
+  font-family: 'Neucha', sans-serif;
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-family: 'Neucha', sans-serif;
+  font-size: 34px;
+  line-height: 1.2em;
+}
+
+h4 {
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-transform:  uppercase;
+}
+
+p {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--color-dark);
+}
+
+span {
+  font-family: 'Neucha', sans-serif;
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+article > p {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
 }
