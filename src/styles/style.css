@@ -44,7 +44,14 @@
 .bgcolor-beige {
   background-color: var(--color-light);
   position: relative;
+  color: var(--color-dark);
 }
+
+.bgcolor-beige-h4 {
+  color: var(--color-brown);
+  background-color: var(--color-light);
+}
+
 
 .bgcolor-white {
   background-color: var(--color-white);
@@ -56,6 +63,7 @@
 
 .bgcolor-brown {
   background-color: var(--color-brown);
+  color: var(--color-white);
   position: relative;
 }
 
@@ -76,12 +84,27 @@
   color: var(--color-main);
 }
 
+.translucent,
+.translucent-white {
+  color: var(--color-dark-translucent);
+  font-family: 'Neucha', sans-serif;
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+.translucent-white {
+  color: var(--color-white-translucent);
+}
+
+
 h1 {
 font-family: 'Neucha', sans-serif;
 font-size: 72px;
 line-height: 1.2em;
 width: auto;
 font-weight: 400;
+margin-bottom: 185px;
+margin-top: 0;
 }
 
 h2 {
@@ -91,7 +114,8 @@ h2 {
   font-weight: 400;
 }
 
-h3 {
+h3,
+.large-text {
   font-family: 'Neucha', sans-serif;
   font-size: 34px;
   line-height: 1.2em;
@@ -103,20 +127,17 @@ h4 {
   font-size: 14px;
   line-height: 1.2em;
   text-transform:  uppercase;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
 }
 
 p {
   font-family: 'OpenSans-Regular', sans-serif;
   font-size: 16px;
   line-height: 1.6em;  
-  /*margin: 0; - 1 страница. если поставить отступы 0, то слетают абзацы, иначе верхняя строка не в 0*/
+  margin-top: 0;
 }
-
-/*span {
-  font-family: 'Neucha', sans-serif;
-  font-size: 24px;
-  line-height: 1.2em;
-}*/
 
 article > p {
   font-family: 'OpenSans-Regular', sans-serif;
@@ -124,17 +145,24 @@ article > p {
   line-height: 1.2em;
 }
 
-img {
+.img-main {
   height: 525px;
+  width: auto;
   position: absolute;
   top: 55px;
   right: -270px;
 }
 
+img {
+  height: 434px;
+  width: 578px;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
 .columns-2 {
   columns: auto 2;
   column-gap: 30px;
-  margin-top: 185px; /*поставила значение из figma, чтобы текст не попадал на изображение*/
+  position: relative;
 }
 
 button {
@@ -144,6 +172,9 @@ button {
   background-color: var(--color-main);
   color: var(--color-white);
   border: none;
+  margin-top: 40px;
+  position: absolute;
+  right: 400px;
 }
 
 .page-1 * {
@@ -223,3 +254,18 @@ main::before {
   margin: 0;
 }
 
+a {  
+  text-decoration: none;
+}
+
+.text-to-picture-left {
+padding-left: 30px;
+}
+
+.text-to-picture-right {
+  padding-right: 30px;
+  }
+
+.picture-text {
+  display: flex;
+}
