@@ -31,6 +31,16 @@
   box-sizing: border-box;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+}
+
 .content {
   width: 1100px;
   padding-top: 100px;
@@ -51,7 +61,6 @@
   color: var(--color-brown);
   background-color: var(--color-light);
 }
-
 
 .bgcolor-white {
   background-color: var(--color-white);
@@ -84,6 +93,10 @@
   color: var(--color-main);
 }
 
+.color-white {
+  color: var(--color-white);
+}
+
 .translucent,
 .translucent-white {
   color: var(--color-dark-translucent);
@@ -96,15 +109,14 @@
   color: var(--color-white-translucent);
 }
 
-
 h1 {
-font-family: 'Neucha', sans-serif;
-font-size: 72px;
-line-height: 1.2em;
-width: auto;
-font-weight: 400;
-margin-bottom: 185px;
-margin-top: 0;
+  font-family: 'Neucha', sans-serif;
+  font-size: 72px;
+  line-height: 1.2em;
+  width: auto;
+  font-weight: 400;
+  margin-bottom: 185px;
+  margin-top: 0;
 }
 
 h2 {
@@ -120,10 +132,11 @@ h3,
   font-size: 34px;
   line-height: 1.2em;
   font-weight: 400;
+  padding-bottom: 16px;
 }
 
 h4 {
-  font-family: 'OpenSans-Bold', sans-serif;
+  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 14px;
   line-height: 1.2em;
   text-transform:  uppercase;
@@ -162,19 +175,30 @@ img {
 .columns-2 {
   columns: auto 2;
   column-gap: 30px;
-  position: relative;
 }
 
-button {
+.button {
+  display: inline-block;
   padding: 12px 24px;
   font-weight: bold;
+  font-family: 'OpenSans-Regular';
   text-transform: uppercase;
+  text-decoration: none; 
   background-color: var(--color-main);
   color: var(--color-white);
   border: none;
   margin-top: 40px;
-  position: absolute;
-  right: 400px;
+
+  margin-left: 565px;
+}
+
+.button:hover {
+  background-color: #EA7600;
+}
+
+.button:visited { 
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 .page-1 * {
@@ -191,7 +215,7 @@ button {
   display: flex;
   position: relative;
   z-index: 2;
-  margin: auto;
+  margin: 30px auto 0;
 }
 
 main::before {
@@ -217,31 +241,55 @@ main::before {
   padding-top: 0;
 }
 
+.page-2 > h2 {
+  font-size: 52px;
+  margin: 10px 15px 0 0;
+  padding: 0;
+}
+
+.page-2 > * {
+  margin-right: 15px;
+}
+
+.page-2 > *:nth-child(3n) {
+  margin-right: 0;
+}
+
 .block,
 .block-main {
   background-color: var(--color-light);
-  padding: 24px;
   width: 350px;
   height: 323px;
-  margin: 15px 8px; /*как корректно расставить отступы*/
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .block-main {
   background-color: var(--color-main-darkdark);
 }
 
-.block:hover {
+.a-block {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+}
+
+.a-block:hover {
+  background-color: var(--color-main);
+}
+
+.a-block:hover > * {
+  color: var(--color-white);
+}
+
+.a-block:hover h3 {
   background-color: var(--color-main);
   color: var(--color-white);
 }
 
 .h348px {
   height: 348px;
-}
-
-.page-2 > h2 {
-  font-size: 52px;
-  margin: 0;
 }
 
 .block > h2 {
@@ -254,9 +302,18 @@ main::before {
   margin: 0;
 }
 
-a {  
+.a-block,
+.a-block:visited { 
   text-decoration: none;
+  color: var(--color-main-dark);
 }
+
+.text-to-picture-left > h2,
+.text-to-picture-right > h2 {
+  margin-top: 0;  
+  margin-bottom: 30px;
+}
+
 
 .text-to-picture-left {
 padding-left: 30px;
@@ -268,4 +325,74 @@ padding-left: 30px;
 
 .picture-text {
   display: flex;
+}
+
+.form {
+  color: var(--color-white);
+}
+
+input {
+  height: 50px;
+  padding: 15px;
+  width: 415px;
+  border: none;
+  font-family: 'OpenSans-Regular';
+}
+
+.send {
+  display: block;
+  position: relative;
+  content: "";
+  height: 50px;
+  width: 70px;
+  background-color: var(--color-main);
+}
+
+.send:hover {
+  background-color: #EA7600;
+}
+
+.send::before {
+  display: block;
+  content: "";
+  background-image: url('../images/send.svg');
+  position: absolute;
+  background-size: no-repeat;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  bottom: 15px;
+  right: 25px;
+}
+
+.inform {
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'OpenSans-Regular';
+  font-size: 14px;
+}
+
+.new {
+  margin: 0;
+  padding: 55px;
+}
+
+form {
+  display: inline-flex;
+}
+
+.email {
+padding-top: 38px;
+}
+
+.small {
+  font-size: 18px;
+}
+
+.small-2 {
+  font-size: 12px;
+}
+
+.a-footer {
+  color: var(--color-white);
 }
