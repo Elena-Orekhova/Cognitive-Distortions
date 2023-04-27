@@ -139,7 +139,6 @@ h3,
   font-size: 34px;
   line-height: 1.2em;
   font-weight: 400;
-  padding-bottom: 16px;   /*проверить*/
 }
 
 h4 {
@@ -148,7 +147,7 @@ h4 {
   line-height: 1.2em;
   text-transform:  uppercase;
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   padding: 5px 0 5px 10px;
 }
 
@@ -175,12 +174,14 @@ p {
   top: 55px;
   right: -270px;
   z-index: 1;
+  vertical-align: middle;
 }
 
 img {
   height: 434px;
   width: 578px;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  vertical-align: middle;
 }
 
 .flex {
@@ -220,7 +221,7 @@ img {
 }
 
 .page-1 > h2 {
-  padding-bottom: 30px;
+  padding-bottom: 11px;
   margin: 0;
 }
 
@@ -258,7 +259,6 @@ main::before {
 
 .page-2 > h2 {
   font-size: 52px;
-  margin: 10px 15px 0 0;
   padding: 0;
 }
 
@@ -307,14 +307,14 @@ a {
   color: var(--color-white);
 }
 
-.h348px {
-  height: 348px;
-}
-
-.block > h2 {
+.a-block > h2 {
   padding-bottom: 40px;
   font-size: 64px;
   line-height: 1em;
+}
+
+.h348px {
+  height: 348px;
 }
 
 .block * {
