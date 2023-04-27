@@ -27,6 +27,10 @@
   --color-blue: #1085c5;
 }
 
+body {
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -42,7 +46,7 @@
 }
 
 .content {
-  width: 1100px;
+  width: 1110px;
   padding-top: 100px;
   padding-bottom: 100px;
   padding-left: 0;
@@ -103,6 +107,7 @@
   font-family: 'Neucha', sans-serif;
   font-size: 24px;
   line-height: 1.2em;
+  font-weight: 400; 
 }
 
 .translucent-white {
@@ -117,6 +122,8 @@ h1 {
   font-weight: 400;
   margin-bottom: 185px;
   margin-top: 0;
+  position: relative;
+  z-index: 2;
 }
 
 h2 {
@@ -132,30 +139,33 @@ h3,
   font-size: 34px;
   line-height: 1.2em;
   font-weight: 400;
-  padding-bottom: 16px;
+  padding-bottom: 16px;   /*проверить*/
 }
 
 h4 {
-  font-family: 'OpenSans-Regular', sans-serif;
+  font-family: 'OpenSans-Bold', sans-serif;
   font-size: 14px;
   line-height: 1.2em;
   text-transform:  uppercase;
   margin-top: 100px;
   margin-bottom: 20px;
-  padding: 5px 10px;
+  padding: 5px 0 5px 10px;
 }
 
 p {
   font-family: 'OpenSans-Regular', sans-serif;
   font-size: 16px;
   line-height: 1.6em;  
-  margin-top: 0;
+  margin: 0;
+  padding-top: 16px;
 }
 
-article > p {
+.inform {
   font-family: 'OpenSans-Regular', sans-serif;
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: 1.2em; 
+  text-align: center;
+  margin-top: 60px;
 }
 
 .img-main {
@@ -164,6 +174,7 @@ article > p {
   position: absolute;
   top: 55px;
   right: -270px;
+  z-index: 1;
 }
 
 img {
@@ -172,9 +183,14 @@ img {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-.columns-2 {
-  columns: auto 2;
-  column-gap: 30px;
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns {
+  width: 540px;
+  margin: 0;
 }
 
 .button {
@@ -188,8 +204,6 @@ img {
   color: var(--color-white);
   border: none;
   margin-top: 40px;
-
-  margin-left: 565px;
 }
 
 .button:hover {
@@ -269,6 +283,10 @@ main::before {
   background-color: var(--color-main-darkdark);
 }
 
+a {
+  color: var(--color-blue);
+}
+
 .a-block {
   display: block;
   width: 100%;
@@ -324,12 +342,9 @@ main::before {
   padding-right: 30px;
 }
 
-.picture-text {
-  display: flex;
-}
-
 .form {
   color: var(--color-white);
+  height: 190px;
 }
 
 input {
@@ -367,13 +382,6 @@ input {
   right: 25px;
 }
 
-.inform {
-  text-align: center;
-  margin-top: 60px;
-  font-family: 'OpenSans-Regular';
-  font-size: 14px;
-}
-
 .new {
   margin: 0;
   padding: 55px;
@@ -383,16 +391,14 @@ form {
   display: inline-flex;
 }
 
-.email {
-  padding-top: 38px;
-}
-
 .small {
   font-size: 18px;
+  padding: 38px 0 9px 0;
 }
 
 .small-2 {
   font-size: 12px;
+  padding: 0;
 }
 
 .a-footer {
