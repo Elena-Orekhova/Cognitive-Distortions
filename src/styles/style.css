@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "OpenSans-Bold";
+  font-family: OpenSans-Bold;
   font-weight: 700;
   src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
-  font-family: "OpenSans-Regular";
+  font-family: OpenSans-Regular;
   font-weight: 400;
   src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Neucha";
+  font-family: Neucha;
   font-weight: 400;
   src: url("../fonts/Neucha-Regular.ttf");
 }
@@ -102,7 +102,7 @@ body {
 .translucent,
 .translucent-white {
   color: var(--color-dark-translucent);
-  font-family: "Neucha", sans-serif;
+  font-family: Neucha, sans-serif;
   font-size: 24px;
   line-height: 1.2em;
   font-weight: 400; 
@@ -113,7 +113,7 @@ body {
 }
 
 h1 {
-  font-family: "Neucha", sans-serif;
+  font-family: Neucha, sans-serif;
   font-size: 72px;
   line-height: 1.2em;
   width: auto;
@@ -125,7 +125,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Neucha", sans-serif;
+  font-family: Neucha, sans-serif;
   font-size: 60px;
   line-height: 1.2em;
   font-weight: 400;
@@ -133,14 +133,14 @@ h2 {
 
 h3,
 .large-text {
-  font-family: "Neucha", sans-serif;
+  font-family: Neucha, sans-serif;
   font-size: 34px;
   line-height: 1.2em;
   font-weight: 400;
 }
 
 h4 {
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: OpenSans-Bold, sans-serif;
   font-size: 14px;
   line-height: 1.2em;
   text-transform:  uppercase;
@@ -150,7 +150,7 @@ h4 {
 }
 
 p {
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: OpenSans-Regular, sans-serif;
   font-size: 16px;
   line-height: 1.6em;  
   margin: 0;
@@ -158,7 +158,7 @@ p {
 }
 
 .inform {
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: OpenSans-Regular, sans-serif;
   font-size: 14px;
   line-height: 1.2em; 
   text-align: center;
@@ -196,7 +196,7 @@ img {
   display: inline-block;
   padding: 12px 24px;
   font-weight: bold;
-  font-family: "OpenSans-Regular";
+  font-family: OpenSans-Regular, sans-serif;
   text-transform: uppercase;
   text-decoration: none; 
   background-color: var(--color-main);
@@ -349,7 +349,7 @@ input {
   padding: 15px;
   width: 415px;
   border: none;
-  font-family: "OpenSans-Regular";
+  font-family: OpenSans-Regular, sans-serif;
 }
 
 .send {
