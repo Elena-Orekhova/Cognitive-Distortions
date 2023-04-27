@@ -216,17 +216,18 @@ img {
   position: relative;
   z-index: 2;
   margin: 30px auto 0;
+  border: none;
 }
 
 main::before {
- background-color: var(--color-main-dark);
- height: 100px;
- width: 100%;
- display: flex;
- z-index: 1;
- content: "";
- position: relative;
- top: -100px;
+  background-color: var(--color-main-dark);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  content: "";
+  position: relative;
+  top: -100px;
 }
 
 .page-1 {
@@ -316,12 +317,12 @@ main::before {
 
 
 .text-to-picture-left {
-padding-left: 30px;
+  padding-left: 30px;
 }
 
 .text-to-picture-right {
   padding-right: 30px;
-  }
+}
 
 .picture-text {
   display: flex;
@@ -346,6 +347,7 @@ input {
   height: 50px;
   width: 70px;
   background-color: var(--color-main);
+  border: none;
 }
 
 .send:hover {
@@ -382,7 +384,7 @@ form {
 }
 
 .email {
-padding-top: 38px;
+  padding-top: 38px;
 }
 
 .small {
