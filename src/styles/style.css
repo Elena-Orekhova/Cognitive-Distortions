@@ -224,8 +224,12 @@ img {
 }
 
 .page-1 > h2 {
-  padding-bottom: 12px;   /*проверить*/
+  padding-bottom: 30px;
   margin: 0;
+}
+
+.text {
+  padding: 0;
 }
 
 .video {
@@ -233,7 +237,7 @@ img {
   display: flex;
   position: relative;
   z-index: 2;
-  margin: 30px auto 16px;
+  margin: 30px auto 0;
   border: none;
 }
 
@@ -245,7 +249,7 @@ main::before {
   z-index: 1;
   content: "";
   position: relative;
-  top: -100px;   /*проверить*/
+  top: -84px;   /*проверить*/
 }
 
 .page-1 {
