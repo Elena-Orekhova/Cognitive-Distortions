@@ -1,11 +1,11 @@
 @font-face {
-  font-family: OpenSans-Bold;
+  font-family: "Open Sans";
   font-weight: 700;
   src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
-  font-family: OpenSans-Regular;
+  font-family: "Open Sans";
   font-weight: 400;
   src: url("../fonts/OpenSans-Regular.ttf");
 }
@@ -141,7 +141,8 @@ h3,
 }
 
 h4 {
-  font-family: OpenSans-Bold, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.2em;
   text-transform:  uppercase;
@@ -151,7 +152,7 @@ h4 {
 }
 
 p {
-  font-family: OpenSans-Regular, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;  
   margin: 0;
@@ -159,7 +160,7 @@ p {
 }
 
 .inform {
-  font-family: OpenSans-Regular, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.2em; 
   text-align: center;
@@ -197,7 +198,8 @@ img {
   display: inline-block;
   padding: 12px 24px;
   font-weight: bold;
-  font-family: OpenSans-Bold, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none; 
   background-color: var(--color-main);
@@ -350,7 +352,7 @@ input {
   padding: 15px;
   width: 415px;
   border: none;
-  font-family: OpenSans-Regular, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .send {
