@@ -105,7 +105,7 @@ body {
   font-family: Neucha, sans-serif;
   font-size: 24px;
   line-height: 1.2em;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 .translucent-white {
@@ -145,7 +145,7 @@ h4 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2em;
-  text-transform:  uppercase;
+  text-transform: uppercase;
   margin-top: 100px;
   margin-bottom: 4px;
   padding: 5px 0 5px 10px;
@@ -154,7 +154,7 @@ h4 {
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.6em;  
+  line-height: 1.6em;
   margin: 0;
   padding-top: 16px;
   color: var(--color-dark);
@@ -163,7 +163,7 @@ p {
 .inform {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  line-height: 1.2em; 
+  line-height: 1.2em;
   text-align: center;
   margin-top: 60px;
 }
@@ -203,7 +203,7 @@ img {
   font-weight: 700;
   line-height: 1.6em;
   text-transform: uppercase;
-  text-decoration: none; 
+  text-decoration: none;
   background-color: var(--color-main);
   color: var(--color-white);
   border: none;
@@ -211,10 +211,10 @@ img {
 }
 
 .button:hover {
-  background-color: #EA7600;
+  background-color: #ea7600;
 }
 
-.button:visited { 
+.button:visited {
   text-decoration: none;
   color: var(--color-white);
 }
@@ -306,7 +306,7 @@ a {
 }
 
 .a-block,
-.a-block:visited { 
+.a-block:visited {
   text-decoration: none;
   color: var(--color-main-dark);
 }
@@ -330,7 +330,7 @@ a {
 
 .text-to-picture-left > h2,
 .text-to-picture-right > h2 {
-  margin-top: 0;  
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
@@ -366,7 +366,7 @@ input {
 }
 
 .send:hover {
-  background-color: #EA7600;
+  background-color: #ea7600;
 }
 
 .send::before {
