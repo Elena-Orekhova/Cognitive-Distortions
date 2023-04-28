@@ -237,7 +237,7 @@ img {
   display: flex;
   position: relative;
   z-index: 2;
-  margin: 30px auto 0;
+  margin: 30px auto 16px;
   border: none;
 }
 
@@ -249,7 +249,7 @@ main::before {
   z-index: 1;
   content: "";
   position: relative;
-  top: -84px;   /*проверить*/
+  top: -100px;
 }
 
 .page-1 {
